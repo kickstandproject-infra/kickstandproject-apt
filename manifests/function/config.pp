@@ -26,10 +26,10 @@ define apt::function::config(
 ) {
   require apt::client
 
-  file { "${apt::params::client::configdir}/${name}":
+  file { "${apt::params::configdir}/${name}":
     ensure  => $ensure,
     content => $content,
-    require => File[$apt::params::client::configdir],
+    require => File[$apt::params::configdir],
   }
 }
 

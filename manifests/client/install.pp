@@ -15,7 +15,7 @@
 class apt::client::install(
   $stage = $apt::client::stage
 ) {
-  package { $apt::params::client::packagename:
+  package { $apt::params::packagename:
     ensure => present,
   }
 }
