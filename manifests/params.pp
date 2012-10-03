@@ -12,7 +12,9 @@
 # of the Apache License, Version 2.0. See the LICENSE file at
 # the top of the source tree.
 #
-class apt::params {
+class apt::params(
+  $stage = $apt::client::stage,
+){
   $basedir = $::operatingsystem ? {
     default => '/etc/apt',
   }

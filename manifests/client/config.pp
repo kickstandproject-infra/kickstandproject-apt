@@ -45,7 +45,7 @@ class apt::client::config(
   }
 
   file { "${apt::params::basedir}/sources.list":
-    ensure  => present,
+    ensure  => file,
     content => template('apt/etc/apt/sources.list.erb'),
     notify  => Exec['apt::client-apt-get-update'],
     require => File[$apt::params::basedir],
