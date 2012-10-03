@@ -49,7 +49,7 @@ define apt::function::repository(
   exec { "${name}-apt-key ${name}-${key}":
     before      => Exec['apt::client-apt-get-update'],
     command     => "apt-key adv --keyserver ${keyserver} --recv-keys ${key}",
-    notify      => Exec['apt::client::apt-get-update'],
+    notify      => Exec['apt::client-apt-get-update'],
     refreshonly => true,
   }
 }

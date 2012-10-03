@@ -15,7 +15,7 @@
 class apt::client::command(
   $stage = $apt::client::stage
 ) {
-  exec { 'apt-client-apt-get-update':
+  exec { 'apt::client-apt-get-update':
     command     => 'apt-get update',
     refreshonly => true,
   }
