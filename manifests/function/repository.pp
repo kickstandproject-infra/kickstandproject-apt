@@ -43,7 +43,7 @@ define apt::function::repository(
     content => template('apt/etc/apt/sources.list.d/repo.list'),
     notify  => Exec["${name}-apt-key ${name}-${key}"],
     path    => "${apt::params::basedir}/sources.list.d/${name}.list",
-    require => Class['apt::common::config'],
+    require => Class['apt::client::config'],
   }
 
   exec { "${name}-apt-key ${name}-${key}":
