@@ -1,5 +1,5 @@
 name    'kickstandproject-apt'
-version '0.0.1'
+version '0.0.2'
 author 'kickstandproject'
 license 'Apache 2.0'
 summary 'UNKNOWN'
