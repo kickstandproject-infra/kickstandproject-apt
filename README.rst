@@ -1,9 +1,10 @@
-# kickstandproject-apt
+kickstandproject-apt
+====================
 
-[![Build Status](https://secure.travis-ci.org/kickstandproject/kickstandproject-apt.png)](http://travis-ci.org/kickstandproject/kickstandproject-apt)
+License
+=======
 
-# License
-Copyright 2012 PolyBeacon, Inc.
+Copyright 2012-2014 PolyBeacon, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
